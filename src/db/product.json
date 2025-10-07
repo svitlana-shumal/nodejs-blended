@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Clean Code",
+    "price": 450,
+    "category": "books",
+    "description": "A Handbook of Agile Software Craftsmanship by Robert C. Martin"
+  },
+  {
+    "name": "Wireless Mouse",
+    "price": 799,
+    "category": "electronics",
+    "description": "Ergonomic wireless mouse with 2.4GHz USB receiver"
+  },
+  {
+    "name": "Cotton T-Shirt",
+    "price": 299,
+    "category": "clothing",
+    "description": "Basic cotton T-shirt available in multiple sizes"
+  },
+  {
+    "name": "Notebook",
+    "price": 120,
+    "category": "other",
+    "description": "A5 size, 96 pages, dotted paper"
+  }
+]

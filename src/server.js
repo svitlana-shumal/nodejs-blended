@@ -6,6 +6,7 @@ import { connectMongoDB } from './db/connectMongoDB.js';
 import { errorHandler } from './middleware/errorHandler.js';
 import { notFoundHandler } from './middleware/notFoundHandler.js';
 import { logger } from './middleware/logger.js';
+import { getAllProducts } from './controllers/productsController.js';
 
 const app = express();
 const PORT = process.env.PORT ?? 3030;
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use(logger);
+app.use(getAllProducts);
 app.use(notFoundHandler);
 app.use(errorHandler);
 

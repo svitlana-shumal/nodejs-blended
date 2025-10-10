@@ -1,14 +1,16 @@
-import { Schema, model } from 'mongoose';
+import { Schema, SchemaTypes, model } from 'mongoose';
 
 const productSchema = new Schema(
   {
     name: {
       type: String,
       required: true,
+      trim: true,
     },
     price: {
       type: Number,
       required: true,
+      trim: true,
     },
     category: {
       type: String,
@@ -18,6 +20,11 @@ const productSchema = new Schema(
     },
     description: {
       type: String,
+    },
+    userId: {
+      type: SchemaTypes.ObjectId,
+      ref: 'User',
+      required: true,
     },
   },
   { timestamps: true },
